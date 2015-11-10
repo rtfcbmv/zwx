@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+.body{
+	font-family: "雅黑";
+	background-image: url(/media/library.jpg);
+	text-shadow: 2px 2px #3F6;
+}
+

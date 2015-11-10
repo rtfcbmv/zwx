@@ -1,0 +1,26 @@
+<html>
+<meta charset="utf-8">
+<style type="text/css">
+div#header {background-color:#99bbbb;}
+</style>
+<div id="header"align="center">
+<h1>图书一览</h1>
+</div>
+<title>图书一览</title>
+<embed src="http://www.xiami.com/widget/0_1007700/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>
+<p align="right"> <A href="/insertbook/">[增添图书]</A> <A href="/search/">[按作者搜索图书]</A></p>
+<table border=1 align="center">
+ <tr>
+ <th>ISBN 图书编号</th><th>Title 书名</th><th>Author 作者</th>
+ </tr>
+{% for book in book_list %}
+ <tr>
+  <td>{{ book.id }}</td>
+  <td><A href="/detail/?id={{book.id}}">{{ book.Title }}</A></td>
+  <td>{{ book.authorname }}</td>
+  <td><input type="button" value="删除" onclick=   "location.href='/deleteok/?id={{book.id}}'">
+  </td>
+
+</tr>
+{% endfor %}
+</table>

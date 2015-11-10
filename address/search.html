@@ -1,0 +1,42 @@
+﻿<meta charset="utf-8">
+<form method="post">
+<head>
+<title>搜索图书</title>
+<style type="text/css">
+div#header {background-color:#99bbbb;}
+</style>
+<div id="header"align="center">
+<h1>按作者搜索图书</h1>
+</div>
+</head>
+<div style="text-align:right;">
+    <A href="/allauthor/">[查看所有作者]</A>
+</div>
+</form>
+<table border=1 align="center">
+  <tr>
+    <form method="get" action="search">
+    <td>查询<input Name="Name" type="text">
+<input type="submit" value="search" onclick="location.href='/find/?Name={{Author.Name}}'"></td> 
+    </form>  
+</tr>
+</table>
+
+<br>
+<div style="text-align:center;">
+    <A href="/allbook/">[浏览所有图书]</A>
+</div>
+
+<div style="text-align:center;">
+    <A href="/insertbook/">[增添图书]</A>
+</div>
+<br>
+<br>
+<br>
+<br>
+<p align="center">
+<img src="http://cdn.duitang.com/uploads/item/201210/29/20121029152600_FFWfH.jpeg" width="490" height="323.3" />
+
+</p>
+</body>
+</html>
